@@ -1,5 +1,5 @@
-# shortgit
-Install and use git shortcuts
+# ShortGit
+An npm package to provide you with some git shortcuts to make life less painful
 
 ---
 

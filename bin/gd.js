@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-const shell = require("shelljs");
+const shell = require("../shell");
 const args = require("yargs").argv._;
 
-shell.exec(`git diff ${args.join(" ")}`);
+shell.exec(["diff", ...args]);

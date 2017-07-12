@@ -1,9 +1,10 @@
 #! /usr/bin/env node
-const shell = require("shelljs");
+const shell = require("../shell");
 const args = require("yargs").argv._;
 
-if(args.length===1){
-    args.unshift("-m");
+let commitMsg = args[0];
+if(args.length>1){
+    commitMsg = args[1];
 }
 
-shell.exec(`git commit ${args.join(" ")}`);
+shell.exec(["commit", "-m", `"${commitMsg}"`]);
