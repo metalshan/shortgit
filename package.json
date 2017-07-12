@@ -15,5 +15,24 @@
   "bugs": {
     "url": "https://github.com/metalshan/shortgit/issues"
   },
-  "homepage": "https://github.com/metalshan/shortgit#readme"
+  "homepage": "https://github.com/metalshan/shortgit#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "shelljs": "^0.7.8",
+    "yargs": "^8.0.2"
+  },
+  "bin": {
+    "g": "bin/g.js",
+    "gs": "bin/gs.js",
+    "ga": "bin/ga.js",
+    "gc": "bin/gc.js",
+    "gb": "bin/gb.js",
+    "gd": "bin/gd.js",
+    "gl": "bin/gl.js",
+    "gp": "bin/gp.js",
+    "gco": "bin/gco.js",
+    "gpl": "bin/gpl.js",
+    "gcl": "bin/gcl.js",
+    "gpr": "bin/gpr.js"
+  }
 }
