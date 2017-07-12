@@ -1,0 +1,19 @@
+{
+  "name": "shortgit",
+  "version": "0.0.0",
+  "description": "To add some shortcuts to handle git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalshan/shortgit.git"
+  },
+  "author": "Paul Shan <paul@voidcanvas.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metalshan/shortgit/issues"
+  },
+  "homepage": "https://github.com/metalshan/shortgit#readme"
+}
