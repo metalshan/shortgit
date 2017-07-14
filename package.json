@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/metalshan/shortgit#readme",
   "dependencies": {
-    "chalk": "^2.0.1",
-    "shelljs": "^0.7.8",
     "yargs": "^8.0.2"
   },
   "bin": {
