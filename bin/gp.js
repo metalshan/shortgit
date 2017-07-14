@@ -1,11 +1,12 @@
 #! /usr/bin/env node
 const shell = require("../shell");
 const args = require("yargs").argv._;
+const util = require("../util");
+
 let addedParams = [];
 switch(args.length){
     case 0:
-        let branchName = shell.execSync("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'").toString();
-        branchName = branchName.replace("*", "").trim();
+        const branchName = util.getCurrentBranch();
         addedParams = ["origin", branchName];
         break;
     case 1:
