@@ -8,6 +8,9 @@
   "parserOptions": {
     "sourceType": "module"
   },
+  "globals": {
+    "process": true
+  },
   "rules": {
     "linebreak-style": [
       "error",

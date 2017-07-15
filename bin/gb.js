@@ -1,5 +1,5 @@
 #! /usr/bin/env node
 const shell = require("../shell");
-const args = require("yargs").argv._;
+const args = require("../args").getAllArguments();
 
 shell.exec(["branch", ...args]);

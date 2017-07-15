@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/metalshan/shortgit#readme",
   "dependencies": {
+    "openurl": "^1.1.1",
     "yargs": "^8.0.2"
   },
   "bin": {

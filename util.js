@@ -6,7 +6,16 @@ module.exports = {
     branchName = branchName.replace("*", "").trim();
     return branchName;
   },
-  getOrigin: () => {
-
+  getOriginUrls: () => {
+    let originRemotes = shell.execSync("git remote -v | grep origin").toString();
+    let originGit, originRepo;
+    if (originRemotes) {
+      originGit = originRemotes.split(/[\t ]/)[1];
+      originRepo = originGit.replace(":", "/").replace("git@", "http://").replace(".git", "");
+    }
+    return {
+      originGit,
+      originRepo
+    }
   }
 }
