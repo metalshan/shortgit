@@ -5,5 +5,11 @@ module.exports = {
   exec(commands) {
     spawn("git", commands, { stdio: "inherit" });
   },
-  execSync
+  execSync(commands) {
+    try {
+      return execSync(commands).toString();
+    } catch (e) {
+      return "";
+    }
+  }
 };

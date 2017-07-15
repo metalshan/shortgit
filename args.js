@@ -6,6 +6,12 @@ module.exports = {
     return argString;
   },
   getArgValue: (arg) => {
-    return args[arg];
+    let argV = args[arg];
+    if (!argV) {
+      if (args._[arg]) {
+        argV = true;
+      }
+    }
+    return argV;
   }
 };
