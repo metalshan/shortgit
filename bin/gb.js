@@ -17,7 +17,7 @@ if (desc) {
       }
     });
     branches.forEach(b => {
-      let branchDesc = shell.execSync(`git config desc.b.${b}`).trim();
+      let branchDesc = shell.execSync(`git config desc.b.${b}`).trim() || "NA";
       if (b === currentBranchName) {
         console.log(colors.green(`* ${b}  ->  ${branchDesc}`));
       } else {

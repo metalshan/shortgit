@@ -1,5 +1,5 @@
 # ShortGit
-Git shortcuts to make like easier.
+Git shortcuts to make like easier; by *VoidCanvas*.
 
 ---
 

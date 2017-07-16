@@ -1,6 +1,6 @@
 {
   "name": "shortgit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "To add some shortcuts to handle git",
   "main": "index.js",
   "scripts": {
