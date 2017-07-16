@@ -1,5 +1,5 @@
 # ShortGit
-An npm package to provide you with some git shortcuts to make life less painful
+Git shortcuts to make like easier.
 
 ---
 
@@ -12,12 +12,14 @@ Shortcut | Actual query
 g | git
 gs | git status
 ga | git add .
-ga filePath | git add filePath
+ga path/to/file | git add path/to/file
 gc "commit message" | git commit -m "commit message"
 gp | git push origin currentBranch
-gp branch1:branch2 | git push origin branch1:branch2
-gp remote branch1:branch2 | git push remote branch1:branch2
+gp remote branch| git push remote branch
+gp arguments | git push arguments
 gb | git branch
+**gb --desc "put branch description"** | **put branch description**
+**gb --desc** | **list of branches with description**
 gd | git diff
 gl | git log
 gco filePath| git checkout filePath
@@ -25,3 +27,7 @@ gco branchName | git checkout branchName
 gcl repo | git clone repo
 gpl | git pull origin currentBranch
 gpl branch | git pull origin branch
+**gpr** | **raise a pull request from current branch**
+**gpr branchName** | **raise pull request from current branch to branchName branch**
+
+
