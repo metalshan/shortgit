@@ -27,6 +27,7 @@ gco branchName | git checkout branchName
 gcl repo | git clone repo
 gpl | git pull origin currentBranch
 gpl branch | git pull origin branch
+gplr | git pull --rebase origin currentBranch
 **gpr** | **raise a pull request from current branch**
 **gpr branchName** | **raise pull request from current branch to branchName branch**
 

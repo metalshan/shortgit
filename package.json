@@ -1,6 +1,6 @@
 {
   "name": "shortgit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "To add some shortcuts to handle git",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "gp": "bin/gp.js",
     "gco": "bin/gco.js",
     "gpl": "bin/gpl.js",
+    "gplr": "bin/gplr.js",
     "gcl": "bin/gcl.js",
     "gpr": "bin/gpr.js"
   }
