@@ -7,4 +7,4 @@ if (args.length > 1) {
   commitMsg = args[1];
 }
 
-shell.exec(["commit", "-m", `"${commitMsg}"`]);
+shell.exec(["commit", "-m", `${commitMsg}`]);
